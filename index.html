@@ -2,28 +2,71 @@
 xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Ejercicio de selectores</title>
-<link rel="stylesheet" type="text/css" href="style/style.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Ejercicio de selectores</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
+
 <body>
-<div id="primero"> <p>Lorem ipsum dolor sit amet,
-  <a href="#">consectetuer adipiscing elit</a>.
-Praesent blandit nibh at felis. Sed nec diam in dolor vestibulum aliquet. Duis ullamcorper, nisi non facilisis molestie,
-<em>lorem sem aliquam nulla</em>, id lacinia velit mi vestibulum enim.</p>
-</div>
-<div class="normal">
-  <p>Phasellus eu velit sed lorem sodales egestas. Ut feugiat.
-    <span><a href="#">Donec porttitor</a>, magna eu varius luctus,</span>
-    metus massa tristique massa, in imperdiet est velit vel magna. Phasellus erat. Duis risus.
-    <a href="#">Maecenas dictum</a>,
-    nibh vitae pellentesque auctor, tellus velit consectetuer tellus, tempor pretium felis tellus at metus.</p>
-<p>Cum sociis natoque <em class="especial">penatibus et magnis</em> dis parturient
-  montes, nascetur ridiculus mus. Proin aliquam convallis ante. Pellentesque habitant
-  morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc aliquet. Sed eu metus. Duis justo.</p>
-<p>Donec facilisis blandit velit. Vestibulum nisi. Proin volutpat,
-  <em class="especial">enim id iaculis congue</em>, orci justo ultrices tortor,
-  <a href="#">quis lacinia eros libero in eros</a>. Sed malesuada dui vel quam.
-  Integer at eros.</p> </div>
-</body>
-</html>
+  <h1 id="titulo"><strong>Lorem ipsum dolor sit amet</strong></h1>
+
+<p>Nulla pretium. Sed tempus nunc vitae neque. <strong><span class="rojita">Suspendisse gravida</span></strong>,
+  metus a scelerisque sollicitudin, <br> lacus velit
+  ultricies nisl, nonummy tempus neque diam quis felis. <span class="destacado">Etiam
+    sagittis tortor</span> sed arcu sagittis <br> tristique.</p>
+
+    <h2 id="subtitulo"><strong>Aliquam tincidunt, sem eget volutpat porta</strong></h2>
+
+    <p>Vivamus velit dui, placerat vel, feugiat in, ornare et, urna. <a href="#">Aenean
+      turpis metus, <em><span class="sub">aliquam non</span></em>, tristique <br>in</a>, pretium varius, sapien. Proin
+      vitae nisi.  Suspendisse <span class="moradita">porttitor purus ac elit</span>.
+      Suspendisse eleifend odio <br> at dui. In in elit sed metus pretium elementum.</p>
+
+      <table summary="Descripción de la tabla y su contenido">
+        <caption>Título de la tabla</caption>
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col" class="especial">Título columna 1</th>
+            <th scope="col" class="especial">Título columna 2</th>
+          </tr>
+        </thead>
+
+      <tfoot>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col" class="ro">Título columna 1</th>
+          <th scope="col" class="ro">Título columna 2</th>
+        </tr>
+      </tfoot>
+
+      <tbody>
+        <tr>
+          <th scope="row" class="especial">Título fila 1</th>
+          <td><span class="verde">Donec purus ipsum</span></td>
+          <td><span class="verde">Curabitur</span> <em><span>blandit</em></span></td>
+        </tr>
+        <tr>
+          <th scope="row" class="ro">Título fila 2</th>
+          <td><span class="verde">Donec</span> <strong><span class="especial" >purus ipsum</span></strong></td>
+          <td><span class="verde">Curabitur blandit</span></td> </tr> </tbody>
+          </table>
+
+          <div id="adicional">
+            <p>Donec purus ipsum, posuere id, venenatis at,
+              <span>placerat ac, lorem</span>.
+              Curabitur blandit, eros sed gravida <br>aliquet, risus justo
+              porta lorem, ut mollis lectus tortor in orci. Pellentesque nec augue.</p>
+
+    <p>Fusce nec felis eu diam pretium adipiscing. <span id="especial">Nunc elit elit,
+      vehicula vulputate</span>, venenatis in,
+      posuere id,<br> lorem. Etiam sagittis, tellus in ultrices accumsan, diam nisi feugiat ante,
+      eu congue magna mi non nisl.</p>
+
+    <p>Vivamus ultrices aliquet augue. <a href="#" class="ver"><span class="ver">Donec arcu pede, pretium vitae</span></a>,
+      rutrum aliquet, tincidunt blandit, pede.<br>
+      Aliquam in nisi. Suspendisse volutpat. Nulla facilisi. Ut ullamcorper nisi quis mi.</p>
+    </div>
+
+    </body>
+    </html>
